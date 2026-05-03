@@ -254,8 +254,7 @@ p {
   margin-top: 34px;
 }
 
-.hero-proof span,
-.evidence-stats span {
+.hero-proof span {
   border: 1px solid var(--border);
   border-radius: 999px;
   background: rgb(255 255 255 / 0.04);
@@ -423,43 +422,50 @@ p {
 }
 
 .evidence-section {
-  display: grid;
-  grid-template-columns: 1fr 1.1fr;
-  gap: 56px;
-  align-items: end;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.evidence-copy {
+  max-width: 920px;
 }
 
 .evidence-copy p {
-  max-width: 620px;
+  max-width: 680px;
 }
 
-.evidence-stats {
+.evidence-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
+  gap: 0;
+  margin: 44px 0 0;
+  padding: 0;
+  border-top: 1px solid var(--border);
+  list-style: none;
 }
 
-.evidence-stats article {
-  min-height: 180px;
-  border: 1px solid var(--border);
-  border-radius: 18px;
-  background:
-    linear-gradient(145deg, rgb(99 102 241 / 0.14), transparent 46%),
-    rgb(28 28 26 / 0.72);
-  padding: 22px;
+.evidence-list div {
+  padding: 22px 28px 0 0;
 }
 
-.evidence-stats strong {
-  display: block;
-  margin-bottom: 44px;
+.evidence-list div + div {
+  border-left: 1px solid var(--border);
+  padding-left: 28px;
+}
+
+.evidence-list dt {
   font-family: "Space Grotesk", Inter, ui-sans-serif, system-ui, sans-serif;
-  font-size: clamp(28px, 4vw, 44px);
-  line-height: 0.95;
+  font-size: clamp(22px, 3vw, 34px);
+  font-weight: 800;
+  line-height: 1;
 }
 
-.evidence-stats span {
-  display: inline-flex;
-  line-height: 1.35;
+.evidence-list dd {
+  max-width: 220px;
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.45;
 }
 
 .split {
@@ -654,13 +660,23 @@ p {
   }
 
   .section-heading,
-  .process-grid,
-  .evidence-section {
+  .process-grid {
     grid-template-columns: 1fr;
   }
 
-  .evidence-stats {
+  .evidence-list {
     grid-template-columns: 1fr;
+  }
+
+  .evidence-list div,
+  .evidence-list div + div {
+    border-left: 0;
+    border-top: 1px solid var(--border);
+    padding: 18px 0 0;
+  }
+
+  .evidence-list div:first-child {
+    border-top: 0;
   }
 
   .skill-grid {
