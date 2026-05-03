@@ -205,6 +205,42 @@ p {
   margin-top: 16px;
 }
 
+.app-store-button {
+  display: inline-flex;
+  min-height: 54px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid rgb(255 255 255 / 0.08);
+  border-radius: 999px;
+  background: #3b3b39;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 800;
+  padding: 0 26px;
+  box-shadow: 0 14px 34px rgb(0 0 0 / 0.28);
+  transition:
+    transform 180ms ease,
+    background 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.app-store-button:hover {
+  background: #474745;
+  box-shadow: 0 18px 42px rgb(0 0 0 / 0.34);
+  transform: translateY(-2px);
+}
+
+.app-store-button svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.app-store-button.compact {
+  margin-top: 16px;
+}
+
 .secondary-link {
   color: var(--foreground);
   font-size: 14px;
@@ -317,23 +353,18 @@ p {
   z-index: 1;
   width: 96px;
   opacity: 0.9;
-  filter: brightness(0) saturate(100%);
   animation: drift 7s ease-in-out infinite;
 }
 
 .shape-one {
   top: 74px;
   left: 0;
-  filter: brightness(0) saturate(100%) invert(44%) sepia(84%) saturate(2631%)
-    hue-rotate(226deg) brightness(101%) contrast(101%);
 }
 
 .shape-two {
   right: 8px;
   bottom: 76px;
   width: 118px;
-  filter: brightness(0) saturate(100%) invert(79%) sepia(53%) saturate(500%)
-    hue-rotate(96deg) brightness(92%) contrast(91%);
   animation-delay: -2s;
 }
 
@@ -341,8 +372,6 @@ p {
   bottom: 180px;
   left: 42px;
   width: 74px;
-  filter: brightness(0) saturate(100%) invert(67%) sepia(72%) saturate(1093%)
-    hue-rotate(171deg) brightness(102%) contrast(95%);
   animation-delay: -4s;
 }
 
@@ -451,32 +480,6 @@ p {
   height: 48px;
   object-fit: contain;
   margin-bottom: 54px;
-  filter: brightness(0) saturate(100%);
-}
-
-.tint.violet {
-  filter: brightness(0) saturate(100%) invert(44%) sepia(84%) saturate(2631%)
-    hue-rotate(226deg) brightness(101%) contrast(101%);
-}
-
-.tint.coral {
-  filter: brightness(0) saturate(100%) invert(60%) sepia(46%) saturate(1755%)
-    hue-rotate(316deg) brightness(105%) contrast(101%);
-}
-
-.tint.green {
-  filter: brightness(0) saturate(100%) invert(79%) sepia(53%) saturate(500%)
-    hue-rotate(96deg) brightness(92%) contrast(91%);
-}
-
-.tint.gold {
-  filter: brightness(0) saturate(100%) invert(83%) sepia(56%) saturate(690%)
-    hue-rotate(345deg) brightness(103%) contrast(101%);
-}
-
-.tint.blue {
-  filter: brightness(0) saturate(100%) invert(67%) sepia(72%) saturate(1093%)
-    hue-rotate(171deg) brightness(102%) contrast(95%);
 }
 
 .subscription-panel {
@@ -681,7 +684,8 @@ p {
     flex-direction: column;
   }
 
-  .primary-button {
+  .primary-button,
+  .app-store-button {
     width: 100%;
   }
 
