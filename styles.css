@@ -479,14 +479,7 @@ p {
   grid-template-columns: 1fr 0.9fr;
 }
 
-.media-panel {
-  overflow: hidden;
-  border: 1px solid var(--border);
-  border-radius: 28px;
-  background: var(--surface);
-}
-
-.media-panel img {
+.media-asset img {
   width: 100%;
   aspect-ratio: 1;
   object-fit: contain;
