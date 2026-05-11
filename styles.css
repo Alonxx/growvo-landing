@@ -346,31 +346,16 @@ p {
   color: var(--foreground);
 }
 
-.float-shape {
+.float-app-icon {
   position: absolute;
   z-index: 1;
-  width: 96px;
-  opacity: 0.9;
-  animation: drift 7s ease-in-out infinite;
-}
-
-.shape-one {
   top: 74px;
   left: 0;
-}
-
-.shape-two {
-  right: 8px;
-  bottom: 76px;
-  width: 118px;
-  animation-delay: -2s;
-}
-
-.shape-three {
-  bottom: 180px;
-  left: 42px;
-  width: 74px;
-  animation-delay: -4s;
+  width: 104px;
+  border-radius: 24px;
+  opacity: 0.9;
+  box-shadow: 0 22px 70px rgb(0 0 0 / 0.36);
+  animation: drift 7s ease-in-out infinite;
 }
 
 .section {
@@ -728,7 +713,7 @@ p {
     text-align: center;
   }
 
-  .float-shape {
+  .float-app-icon {
     display: none;
   }
 
