@@ -346,14 +346,24 @@ p {
   color: var(--foreground);
 }
 
-.float-app-icon {
+.float-growvo {
   position: absolute;
   z-index: 1;
-  top: 74px;
-  left: 0;
   width: 132px;
   opacity: 0.94;
   animation: drift 7s ease-in-out infinite;
+}
+
+.float-growvo-one {
+  top: 74px;
+  left: 0;
+}
+
+.float-growvo-two {
+  right: 6px;
+  bottom: 92px;
+  width: 118px;
+  animation-delay: -2.5s;
 }
 
 .section {
@@ -711,7 +721,7 @@ p {
     text-align: center;
   }
 
-  .float-app-icon {
+  .float-growvo {
     display: none;
   }
 
