@@ -349,20 +349,20 @@ p {
 .float-growvo {
   position: absolute;
   z-index: 1;
-  width: 104px;
-  opacity: 0.78;
+  width: 140px;
+  opacity: 0.9;
   animation: drift 7s ease-in-out infinite;
 }
 
 .float-growvo-one {
-  top: 48px;
-  right: 330px;
+  top: 42px;
+  right: 300px;
 }
 
 .float-growvo-two {
-  right: -8px;
-  bottom: 118px;
-  width: 96px;
+  right: -54px;
+  bottom: 92px;
+  width: 128px;
   animation-delay: -2.5s;
 }
 
