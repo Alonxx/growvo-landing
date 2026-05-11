@@ -351,10 +351,8 @@ p {
   z-index: 1;
   top: 74px;
   left: 0;
-  width: 104px;
-  border-radius: 24px;
-  opacity: 0.9;
-  box-shadow: 0 22px 70px rgb(0 0 0 / 0.36);
+  width: 132px;
+  opacity: 0.94;
   animation: drift 7s ease-in-out infinite;
 }
 
