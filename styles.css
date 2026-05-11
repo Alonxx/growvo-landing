@@ -509,14 +509,18 @@ p {
 }
 
 .skill-card {
-  min-height: 230px;
+  display: flex;
+  min-height: 320px;
+  flex-direction: column;
+  overflow: hidden;
 }
 
-.skill-card .tint {
-  width: 48px;
-  height: 48px;
+.skill-art {
+  width: 100%;
+  height: 142px;
   object-fit: contain;
-  margin-bottom: 54px;
+  object-position: center;
+  margin-bottom: 28px;
 }
 
 .site-footer {
@@ -740,8 +744,9 @@ p {
     min-height: auto;
   }
 
-  .skill-card .tint {
-    margin-bottom: 32px;
+  .skill-art {
+    height: 180px;
+    margin-bottom: 24px;
   }
 
   .site-footer {
