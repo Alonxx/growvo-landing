@@ -348,7 +348,7 @@ p {
 
 .float-growvo {
   position: absolute;
-  z-index: 1;
+  z-index: 3;
   width: 140px;
   opacity: 0.9;
   animation: drift 7s ease-in-out infinite;
